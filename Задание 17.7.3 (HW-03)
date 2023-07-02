@@ -1,0 +1,10 @@
+money = input("Введите сумму, которую собираетесь внести ")
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+t = (int(money)/int(100)*per_cent.get('ТКБ'))
+s = (int(money)/int(100)*per_cent.get('СКБ'))
+v = (int(money)/int(100)*per_cent.get('ВТБ'))
+c = (int(money)/int(100)*per_cent.get('СБЕР'))
+deposit = [t, s, v, c]
+print(deposit)
+max = max(deposit)
+print("Максимальная сумма, которую вы можете заработать %d" % max)
